@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var stringOne = 'Nguyen van Nam';
+    var stringTwo = 'NGUYEN VAN NAM';
+    var stringThree = 'nguyen van Nam';
+    function isFirstLetterUpCase(string) {
+        var check = /^[A-Z]/;
+        if (check.test(string))
+            alert("String's first character is uppercase");
+        else alert("String's first character is not uppercase");
+    }
+    isFirstLetterUpCase(stringOne);
+    isFirstLetterUpCase(stringTwo);
+    isFirstLetterUpCase(stringThree);
+</script>
+</body>
+</html>
